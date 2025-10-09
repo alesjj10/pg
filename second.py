@@ -8,14 +8,25 @@ def cislo_text(cislo):
     
     cislo = int(cislo)
 
-    # pro cisla od 0 do 9 
-    if cislo < 10:
+    
+    if cislo < 10:          # pro cisla od 0 do 9 
         return jednotky[cislo]
     
-    elif cislo < 20:
+    elif cislo < 20:        # pro cisla od 10 do 19
         return nact[cislo]
     
-
+    elif cislo < 100:       # pro cisla od 20 do 99
+        a = cislo // 10     # rozklad na desitkz   
+        b = cislo % 10      # rozklad na jednotky
+        if b == 0:          # pokud je jednotka 0, vypise se jen desitka
+            return desitky[a]
+        else:               # jinak se vypisi desitka a jednotka
+            return desitky[a] + " " + jednotky[b]
+    # pro cislo 100
+    elif cislo == 100:
+        return "sto"
+    else:
+        return "mimo rozsah"
 
 
 if __name__ == "__main__":
