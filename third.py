@@ -7,6 +7,8 @@ def je_prvocislo(cislo):
             return False
     return True
 
+            # určí true/false pro prvočíslo
+
     """
     Funkce overi, zda zadane cislo je nebo neni prvocislo a vrati True nebo False
 
@@ -34,11 +36,15 @@ def vrat_prvocisla(maximum):
             prvocisla.append(i)
     return prvocisla
 
+            # vrátí seznam prvočísel
+
     """
     Funkce spocita vsechna prvocisla v rozsahu 1 az maximum a vrati je jako seznam.
     """
 
 if __name__ == "__main__":
     cislo = int(input("Zadej maximum: "))
+    print(je_prvocislo(cislo))  # vypíše true false
+
     prvocisla = vrat_prvocisla(cislo)
-    print(prvocisla)
+    print(prvocisla)            # vypíše max prvocisla
