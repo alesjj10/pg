@@ -13,7 +13,7 @@ def cislo_text(cislo):
         return jednotky[cislo]
     
     elif cislo < 20:        # pro cisla od 10 do 19
-        return nact[cislo]
+        return nact[cislo - 10]
     
     elif cislo < 100:       # pro cisla od 20 do 99
         a = cislo // 10     # rozklad na desitkz   
