@@ -132,8 +132,8 @@ class Rook(Piece):
 
 class Queen(Piece):
     def possible_moves(self):
-        rook_moves = Rook(self.color, self.move).possible_moves()
-        bishop_moves = Bishop(self.color, self.move).possible_moves()
+        rook_moves = Rook(self.color, self.position).possible_moves()
+        bishop_moves = Bishop(self.color, self.position).possible_moves()
 
         moves = rook_moves + bishop_moves
 
@@ -169,6 +169,6 @@ class King(Piece):
 
 
 if __name__ == "__main__":
-    piece = Knight("black", (1, 2))
+    piece = Queen("black", (1, 2))
     print(piece)
     print(piece.possible_moves())
