@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
 
     """
-    standalone kód
+    standalone kód s FOR cyklem
 
     text = "acdef"
     seznam = ["a", "b", "c", "d", "e", "f"]
