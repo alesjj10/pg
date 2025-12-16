@@ -3,10 +3,9 @@ def bin_to_dec(binarni_cislo):
     # 111 -> 7
     # "101" -> 5
 
+    bin_str = str(binarni_cislo)
+    return int(bin_str, 2)
 
-
-    
-    return 0
 
 
 def test_bin_to_dec():
