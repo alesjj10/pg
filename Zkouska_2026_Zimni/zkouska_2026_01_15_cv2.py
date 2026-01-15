@@ -34,8 +34,8 @@ def test_spocitej_statistiku():                                                 
 if __name__ == "__main__":          # Hlavni část programu
     try:            # Ošetření chyb při práci se soubory (skočí to except při chybě)
 
-        vstupni_soubor = 'data.txt'
-        vystupni_soubor = 'statistika.txt'
+        vstupni_soubor = 'Zkouska_2026_Zimni/data.txt'
+        vystupni_soubor = 'Zkouska_2026_Zimni/statistika.txt'
 
         # načtěte data ze vstupního souboru (jméno souboru je v proměnné `vstupni_soubor`)    
         
