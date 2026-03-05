@@ -1,0 +1,4 @@
+Hello from logger1
+Hello from logger2
+Hello from logger3
+toto je dalsi text v jednom loggeru

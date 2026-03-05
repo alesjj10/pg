@@ -1,0 +1,2 @@
+Volám funkci ahoj s argumenty ('Metre',) a {}
+Volám funkci cau s argumenty () a {}
